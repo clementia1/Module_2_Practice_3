@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Module_2_Practice_3.Models.Enums
 {
-    class Volkswagen
+    public enum Volkswagen
     {
+        Arteon,
+        Golf,
+        ID3,
+        Passat
     }
 }

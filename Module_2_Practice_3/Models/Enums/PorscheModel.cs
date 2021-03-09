@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Module_2_Practice_3.Models.Enums
 {
-    class PorscheModel
+    public enum PorscheModel
     {
+        Taycan,
+        Cayman,
+        Cayenne,
+        Panamera
     }
 }

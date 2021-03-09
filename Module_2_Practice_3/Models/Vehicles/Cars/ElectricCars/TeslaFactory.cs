@@ -8,7 +8,7 @@ using Module_2_Practice_3.Models.Enums;
 
 namespace Module_2_Practice_3.Models.Vehicles.Cars.ElectricCars
 {
-    public class TeslaFactory : ICarFactory
+    public class TeslaFactory
     {
         private double _price;
         private double _topSpeed;

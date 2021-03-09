@@ -42,5 +42,26 @@ namespace Module_2_Practice_3.Services
             Array.Sort(result.Cars, new SortCarsByFuelConsumptionDescending());
             return result;
         }
+
+        public TaxiCompany FilterByPrice(TaxiCompany taxiCompany, double minPrice, double maxPrice)
+        {
+            var result = (TaxiCompany)taxiCompany.Clone();
+            result.Cars = Array.FindAll(taxiCompany.Cars, item => item.Price > minPrice && item.Price < maxPrice);
+            return result;
+        }
+
+        public TaxiCompany FilterByPower(TaxiCompany taxiCompany, double minPower, double maxPower)
+        {
+            var result = (TaxiCompany)taxiCompany.Clone();
+            result.Cars = Array.FindAll(taxiCompany.Cars, item => item.PowerKilowatts > minPower && item.Price < maxPower);
+            return result;
+        }
+
+        public TaxiCompany FilterByFuelConsumption(TaxiCompany taxiCompany, double minFuelConsumption, double maxFuelConsumption)
+        {
+            var result = (TaxiCompany)taxiCompany.Clone();
+            result.Cars = Array.FindAll(taxiCompany.Cars, item => item.FuelConsumptionMilesPerGallon > minFuelConsumption && item.Price < maxFuelConsumption);
+            return result;
+        }
     }
 }

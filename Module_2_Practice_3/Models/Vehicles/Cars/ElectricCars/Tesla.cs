@@ -22,6 +22,8 @@ namespace Module_2_Practice_3.Models.Vehicles.Cars.ElectricCars
 
         public override int EnergyConsumptionWattHoursPerKilometer { get; set; }
 
+        public override double FuelConsumptionMilesPerGallon { get; set; }
+
         public TeslaModel Model { get; set; }
     }
 }
