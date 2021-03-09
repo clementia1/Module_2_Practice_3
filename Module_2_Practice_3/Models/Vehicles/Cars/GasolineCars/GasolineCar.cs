@@ -8,8 +8,8 @@ namespace Module_2_Practice_3.Models.Vehicles.Cars.GasolineCars
 {
     public abstract class GasolineCar : Car
     {
-        public GasolineCar(double price, double topSpeed, double powerKilowatts, int fuelConsumptionMilesPerGallon)
-            : base(price, topSpeed, powerKilowatts)
+        public GasolineCar(double price, double topSpeed, double horsePower, double fuelConsumptionMilesPerGallon)
+            : base(price, topSpeed, horsePower)
         {
             FuelConsumptionMilesPerGallon = fuelConsumptionMilesPerGallon;
         }

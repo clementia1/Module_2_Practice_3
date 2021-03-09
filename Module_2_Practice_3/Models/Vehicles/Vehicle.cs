@@ -8,18 +8,18 @@ namespace Module_2_Practice_3.Models.Vehicles
 {
     public abstract class Vehicle
     {
-        public Vehicle(double price, double topSpeed, double powerKilowatts)
+        public Vehicle(double price, double topSpeed, double horsePower)
         {
             Price = price;
             TopSpeed = topSpeed;
-            PowerKilowatts = powerKilowatts;
+            HorsePower = horsePower;
         }
 
         public abstract double Price { get; set; }
 
         public abstract double TopSpeed { get; set; }
 
-        public abstract double PowerKilowatts { get; set; }
+        public abstract double HorsePower { get; set; }
 
         public abstract double FuelConsumptionMilesPerGallon { get; set; }
     }

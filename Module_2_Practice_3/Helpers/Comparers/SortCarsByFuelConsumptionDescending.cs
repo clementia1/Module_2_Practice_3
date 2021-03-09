@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Module_2_Practice_3.Models.Vehicles.Cars;
 
-namespace Module_2_Practice_3.Helpers
+namespace Module_2_Practice_3.Helpers.Comparers
 {
     public class SortCarsByFuelConsumptionDescending : IComparer<Car>
     {

@@ -9,18 +9,19 @@ namespace Module_2_Practice_3.Models.Vehicles.Cars.ElectricCars
 {
     public class Tesla : ElectricCar
     {
-        public Tesla(double price, double topSpeed, double powerKilowatts, int energyConsumptionWattHoursPerKilometer)
-            : base(price, topSpeed, powerKilowatts, energyConsumptionWattHoursPerKilometer)
+        public Tesla(double price, double topSpeed, double horsePower, double energyConsumptionWattHoursPerKilometer, TeslaModel model)
+            : base(price, topSpeed, horsePower, energyConsumptionWattHoursPerKilometer)
         {
+            Model = model;
         }
 
         public override double Price { get; set; }
 
         public override double TopSpeed { get; set; }
 
-        public override double PowerKilowatts { get; set; }
+        public override double HorsePower { get; set; }
 
-        public override int EnergyConsumptionWattHoursPerKilometer { get; set; }
+        public override double EnergyConsumptionWattHoursPerKilometer { get; set; }
 
         public override double FuelConsumptionMilesPerGallon { get; set; }
 

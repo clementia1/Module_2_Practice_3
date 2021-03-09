@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Module_2_Practice_3.Helpers;
+using Module_2_Practice_3.Helpers.Comparers;
 using Module_2_Practice_3.Models;
 using Module_2_Practice_3.Models.Vehicles.Cars;
 using Module_2_Practice_3.Services.Abstractions;
@@ -36,7 +36,7 @@ namespace Module_2_Practice_3.Services
             return sum;
         }
 
-        public TaxiCompany SortByFuelConsumption(TaxiCompany taxiCompany)
+        public TaxiCompany SortByFuelConsumptionDescending(TaxiCompany taxiCompany)
         {
             var result = (TaxiCompany)taxiCompany.Clone();
             Array.Sort(result.Cars, new SortCarsByFuelConsumptionDescending());
@@ -53,7 +53,7 @@ namespace Module_2_Practice_3.Services
         public TaxiCompany FilterByPower(TaxiCompany taxiCompany, double minPower, double maxPower)
         {
             var result = (TaxiCompany)taxiCompany.Clone();
-            result.Cars = Array.FindAll(taxiCompany.Cars, item => item.PowerKilowatts > minPower && item.Price < maxPower);
+            result.Cars = Array.FindAll(taxiCompany.Cars, item => item.HorsePower > minPower && item.Price < maxPower);
             return result;
         }
 

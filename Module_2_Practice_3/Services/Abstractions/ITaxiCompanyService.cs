@@ -14,6 +14,6 @@ namespace Module_2_Practice_3.Services.Abstractions
 
         double GetTotalCarCost(TaxiCompany taxiCompany);
 
-        TaxiCompany SortByFuelConsumption(TaxiCompany taxiCompany);
+        TaxiCompany SortByFuelConsumptionDescending(TaxiCompany taxiCompany);
     }
 }

@@ -8,8 +8,8 @@ namespace Module_2_Practice_3.Models.Vehicles.Cars
 {
     public abstract class Car : Vehicle
     {
-        public Car(double price, double topSpeed, double powerKilowatts)
-            : base(price, topSpeed, powerKilowatts)
+        public Car(double price, double topSpeed, double horsePower)
+            : base(price, topSpeed, horsePower)
         {
         }
     }
