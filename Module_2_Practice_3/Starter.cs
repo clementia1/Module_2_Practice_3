@@ -29,6 +29,7 @@ namespace Module_2_Practice_3
             var sortedByFuelConsuption = taxiCompanyService.SortByFuelConsumptionDescending(taxiCompany);
             var carsTotalValue = taxiCompanyService.GetTotalCarCost(taxiCompany);
             var filteredByHorsePower = taxiCompanyService.FilterByPower(taxiCompany, 30, 50);
+            var filteredByPrice = taxiCompanyService.FilterByPrice(filteredByHorsePower, 20000, 30000);
         }
     }
 }
