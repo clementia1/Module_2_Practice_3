@@ -18,8 +18,8 @@ namespace Module_2_Practice_3
         public void Run()
         {
             var taxiCompany = new TaxiCompany();
-            var taxiCompanyService = new TaxiCompanyService();
-            taxiCompany.Cars = new Car[5];
+            ITaxiCompanyService taxiCompanyService = new TaxiCompanyService();
+            taxiCompany.Cars = new Car[4];
 
             taxiCompanyService.AddCar(taxiCompany, new Tesla(45000, 225, 480, 149, TeslaModel.Model3));
             taxiCompanyService.AddCar(taxiCompany, new Tesla(141005, 322, 1020, 172, TeslaModel.ModelS));
@@ -28,7 +28,7 @@ namespace Module_2_Practice_3
 
             var sortedByFuelConsuption = taxiCompanyService.SortByFuelConsumptionDescending(taxiCompany);
             var carsTotalValue = taxiCompanyService.GetTotalCarCost(taxiCompany);
-            var filteredByHorsePower = taxiCompanyService.FilterByPower(taxiCompany, 30, 50);
+            var filteredByHorsePower = taxiCompanyService.FilterByPower(taxiCompany, 200, 400);
             var filteredByPrice = taxiCompanyService.FilterByPrice(filteredByHorsePower, 20000, 30000);
         }
     }

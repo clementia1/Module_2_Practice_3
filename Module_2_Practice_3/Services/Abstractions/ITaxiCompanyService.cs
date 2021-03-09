@@ -15,5 +15,11 @@ namespace Module_2_Practice_3.Services.Abstractions
         double GetTotalCarCost(TaxiCompany taxiCompany);
 
         TaxiCompany SortByFuelConsumptionDescending(TaxiCompany taxiCompany);
+
+        TaxiCompany FilterByPrice(TaxiCompany taxiCompany, double minPrice, double maxPrice);
+
+        TaxiCompany FilterByPower(TaxiCompany taxiCompany, double minPower, double maxPower);
+
+        TaxiCompany FilterByFuelConsumption(TaxiCompany taxiCompany, double minFuelConsumption, double maxFuelConsumption);
     }
 }

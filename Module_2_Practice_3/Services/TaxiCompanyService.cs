@@ -53,14 +53,14 @@ namespace Module_2_Practice_3.Services
         public TaxiCompany FilterByPower(TaxiCompany taxiCompany, double minPower, double maxPower)
         {
             var result = (TaxiCompany)taxiCompany.Clone();
-            result.Cars = Array.FindAll(taxiCompany.Cars, item => item.HorsePower > minPower && item.Price < maxPower);
+            result.Cars = Array.FindAll(taxiCompany.Cars, item => item.HorsePower > minPower && item.HorsePower < maxPower);
             return result;
         }
 
         public TaxiCompany FilterByFuelConsumption(TaxiCompany taxiCompany, double minFuelConsumption, double maxFuelConsumption)
         {
             var result = (TaxiCompany)taxiCompany.Clone();
-            result.Cars = Array.FindAll(taxiCompany.Cars, item => item.FuelConsumptionMilesPerGallon > minFuelConsumption && item.Price < maxFuelConsumption);
+            result.Cars = Array.FindAll(taxiCompany.Cars, item => item.FuelConsumptionMilesPerGallon > minFuelConsumption && item.FuelConsumptionMilesPerGallon < maxFuelConsumption);
             return result;
         }
     }
