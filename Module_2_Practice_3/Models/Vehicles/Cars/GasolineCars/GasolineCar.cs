@@ -13,5 +13,7 @@ namespace Module_2_Practice_3.Models.Vehicles.Cars.GasolineCars
         {
             FuelConsumptionMilesPerGallon = fuelConsumptionMilesPerGallon;
         }
+
+        public double FuelTankCapacity { get; set; }
     }
 }
