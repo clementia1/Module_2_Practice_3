@@ -9,8 +9,8 @@ namespace Module_2_Practice_3.Models.Vehicles.Cars.GasolineCars
 {
     public class Toyota : GasolineCar
     {
-        public Toyota(double price, double topSpeed, double horsePower, double fuelConsumptionMilesPerGallon, ToyotaModel model)
-            : base(price, topSpeed, horsePower, fuelConsumptionMilesPerGallon)
+        public Toyota(double price, double topSpeed, double horsePower, double fuelConsumptionMilesPerGallon, double fuelTankCapacity, ToyotaModel model)
+            : base(price, topSpeed, horsePower, fuelConsumptionMilesPerGallon, fuelTankCapacity)
         {
             Model = model;
         }

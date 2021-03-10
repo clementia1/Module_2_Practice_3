@@ -9,8 +9,8 @@ namespace Module_2_Practice_3.Models.Vehicles.Cars.GasolineCars
 {
     public class Honda : GasolineCar
     {
-        public Honda(double price, double topSpeed, double horsePower, double fuelConsumptionMilesPerGallon, HondaModel model)
-            : base(price, topSpeed, horsePower, fuelConsumptionMilesPerGallon)
+        public Honda(double price, double topSpeed, double horsePower, double fuelConsumptionMilesPerGallon, double fuelTankCapacity, HondaModel model)
+            : base(price, topSpeed, horsePower, fuelConsumptionMilesPerGallon, fuelTankCapacity)
         {
             Model = model;
         }

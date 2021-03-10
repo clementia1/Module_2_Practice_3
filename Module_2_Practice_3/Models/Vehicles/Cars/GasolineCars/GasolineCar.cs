@@ -8,10 +8,11 @@ namespace Module_2_Practice_3.Models.Vehicles.Cars.GasolineCars
 {
     public abstract class GasolineCar : Car
     {
-        public GasolineCar(double price, double topSpeed, double horsePower, double fuelConsumptionMilesPerGallon)
+        public GasolineCar(double price, double topSpeed, double horsePower, double fuelConsumptionMilesPerGallon, double fuelTankCapacity)
             : base(price, topSpeed, horsePower)
         {
             FuelConsumptionMilesPerGallon = fuelConsumptionMilesPerGallon;
+            FuelTankCapacity = fuelTankCapacity;
         }
 
         public double FuelTankCapacity { get; set; }

@@ -9,8 +9,8 @@ namespace Module_2_Practice_3.Models.Vehicles.Cars.GasolineCars
 {
     public class Volkswagen : GasolineCar
     {
-        public Volkswagen(double price, double topSpeed, double horsePower, double fuelConsumptionMilesPerGallon, VolkswagenModel model)
-            : base(price, topSpeed, horsePower, fuelConsumptionMilesPerGallon)
+        public Volkswagen(double price, double topSpeed, double horsePower, double fuelConsumptionMilesPerGallon, double fuelTankCapacity, VolkswagenModel model)
+            : base(price, topSpeed, horsePower, fuelConsumptionMilesPerGallon, fuelTankCapacity)
         {
             Model = model;
         }
