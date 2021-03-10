@@ -26,5 +26,9 @@ namespace Module_2_Practice_3.Models.Vehicles.Cars.ElectricCars
         public override double FuelConsumptionMilesPerGallon { get; set; }
 
         public TeslaModel Model { get; set; }
+
+        public override int PassengerSeats { get; } = 5;
+
+        public override ManufacturerCompany Manufacturer { get; } = ManufacturerCompany.Tesla;
     }
 }

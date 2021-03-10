@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Module_2_Practice_3.Models.Enums;
 
 namespace Module_2_Practice_3.Models.Vehicles.Cars
 {
@@ -12,5 +13,9 @@ namespace Module_2_Practice_3.Models.Vehicles.Cars
             : base(price, topSpeed, horsePower)
         {
         }
+
+        public abstract int PassengerSeats { get; }
+
+        public abstract ManufacturerCompany Manufacturer { get; }
     }
 }

@@ -24,5 +24,9 @@ namespace Module_2_Practice_3.Models.Vehicles.Cars.GasolineCars
         public override double FuelConsumptionMilesPerGallon { get; set; }
 
         public VolkswagenModel Model { get; set; }
+
+        public override int PassengerSeats { get; } = 4;
+
+        public override ManufacturerCompany Manufacturer { get; } = ManufacturerCompany.Volkswagen;
     }
 }
